@@ -290,5 +290,10 @@ namespace ClarionSupport
                 }
             }
         }
+
+        private void resultRTFBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

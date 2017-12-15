@@ -73,7 +73,7 @@ namespace ClarionSupport
                 {
                     WorkingClass control = new WorkingClass(tempStringEntry);
                     control.ValueCheck();
-                    rtfValue.Text += tempStringEntry += Environment.NewLine;
+                    rtfValue.Text += tempStringEntry += "\n";
                 }
                 else
                 {
@@ -84,6 +84,11 @@ namespace ClarionSupport
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void rtfValue_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

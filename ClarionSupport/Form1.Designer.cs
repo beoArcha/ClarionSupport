@@ -70,7 +70,7 @@
             this.dataBox.FormattingEnabled = true;
             this.dataBox.ItemHeight = 16;
             this.dataBox.Location = new System.Drawing.Point(16, 96);
-            this.dataBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataBox.Margin = new System.Windows.Forms.Padding(4);
             this.dataBox.Name = "dataBox";
             this.dataBox.Size = new System.Drawing.Size(192, 340);
             this.dataBox.TabIndex = 3;
@@ -81,7 +81,7 @@
             this.propBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.propBox.FormattingEnabled = true;
             this.propBox.Location = new System.Drawing.Point(241, 96);
-            this.propBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.propBox.Margin = new System.Windows.Forms.Padding(4);
             this.propBox.Name = "propBox";
             this.propBox.Size = new System.Drawing.Size(195, 327);
             this.propBox.TabIndex = 5;
@@ -116,9 +116,9 @@
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Location = new System.Drawing.Point(448, 257);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(161, 180);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
@@ -128,7 +128,7 @@
             // 
             this.checkBoxSelf.AutoSize = true;
             this.checkBoxSelf.Location = new System.Drawing.Point(27, 146);
-            this.checkBoxSelf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxSelf.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxSelf.Name = "checkBoxSelf";
             this.checkBoxSelf.Size = new System.Drawing.Size(54, 21);
             this.checkBoxSelf.TabIndex = 4;
@@ -138,7 +138,7 @@
             // propsValueEntry
             // 
             this.propsValueEntry.Location = new System.Drawing.Point(27, 114);
-            this.propsValueEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.propsValueEntry.Margin = new System.Windows.Forms.Padding(4);
             this.propsValueEntry.Name = "propsValueEntry";
             this.propsValueEntry.Size = new System.Drawing.Size(105, 22);
             this.propsValueEntry.TabIndex = 3;
@@ -148,7 +148,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(27, 86);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(115, 21);
             this.checkBox3.TabIndex = 2;
@@ -162,7 +162,7 @@
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(27, 58);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(38, 21);
             this.checkBox2.TabIndex = 1;
@@ -175,7 +175,7 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(27, 30);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(38, 21);
             this.checkBox1.TabIndex = 0;
@@ -186,7 +186,7 @@
             // 
             this.addControlButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.addControlButton.Location = new System.Drawing.Point(13, 500);
-            this.addControlButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addControlButton.Margin = new System.Windows.Forms.Padding(4);
             this.addControlButton.Name = "addControlButton";
             this.addControlButton.Size = new System.Drawing.Size(100, 28);
             this.addControlButton.TabIndex = 8;
@@ -198,7 +198,7 @@
             // 
             this.controlNameEntry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.controlNameEntry.Location = new System.Drawing.Point(16, 468);
-            this.controlNameEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.controlNameEntry.Margin = new System.Windows.Forms.Padding(4);
             this.controlNameEntry.Name = "controlNameEntry";
             this.controlNameEntry.Size = new System.Drawing.Size(217, 22);
             this.controlNameEntry.TabIndex = 7;
@@ -210,9 +210,9 @@
             this.groupBox2.Controls.Add(this.functionRadio);
             this.groupBox2.Controls.Add(this.propertiesRadio);
             this.groupBox2.Location = new System.Drawing.Point(445, 96);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(161, 101);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -222,7 +222,7 @@
             // 
             this.functionRadio.AutoSize = true;
             this.functionRadio.Location = new System.Drawing.Point(20, 60);
-            this.functionRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.functionRadio.Margin = new System.Windows.Forms.Padding(4);
             this.functionRadio.Name = "functionRadio";
             this.functionRadio.Size = new System.Drawing.Size(83, 21);
             this.functionRadio.TabIndex = 1;
@@ -235,7 +235,7 @@
             this.propertiesRadio.AutoSize = true;
             this.propertiesRadio.Checked = true;
             this.propertiesRadio.Location = new System.Drawing.Point(21, 32);
-            this.propertiesRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.propertiesRadio.Margin = new System.Windows.Forms.Padding(4);
             this.propertiesRadio.Name = "propertiesRadio";
             this.propertiesRadio.Size = new System.Drawing.Size(94, 21);
             this.propertiesRadio.TabIndex = 0;
@@ -248,7 +248,7 @@
             this.autoAddCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.autoAddCheck.AutoSize = true;
             this.autoAddCheck.Location = new System.Drawing.Point(16, 444);
-            this.autoAddCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.autoAddCheck.Margin = new System.Windows.Forms.Padding(4);
             this.autoAddCheck.Name = "autoAddCheck";
             this.autoAddCheck.Size = new System.Drawing.Size(106, 21);
             this.autoAddCheck.TabIndex = 6;
@@ -261,7 +261,7 @@
             this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(445, 204);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(160, 21);
             this.checkBox4.TabIndex = 11;
@@ -273,11 +273,12 @@
             this.resultRTFBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.resultRTFBox.Location = new System.Drawing.Point(645, 96);
-            this.resultRTFBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resultRTFBox.Margin = new System.Windows.Forms.Padding(4);
             this.resultRTFBox.Name = "resultRTFBox";
             this.resultRTFBox.Size = new System.Drawing.Size(276, 340);
             this.resultRTFBox.TabIndex = 15;
             this.resultRTFBox.Text = "";
+            this.resultRTFBox.TextChanged += new System.EventHandler(this.resultRTFBox_TextChanged);
             // 
             // Resoult
             // 
@@ -294,7 +295,7 @@
             // 
             this.copyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.copyButton.Location = new System.Drawing.Point(645, 468);
-            this.copyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.copyButton.Margin = new System.Windows.Forms.Padding(4);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(100, 28);
             this.copyButton.TabIndex = 16;
@@ -306,7 +307,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.Location = new System.Drawing.Point(121, 500);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 28);
             this.button1.TabIndex = 9;
@@ -375,7 +376,7 @@
             // 
             this.generateButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.generateButton.Location = new System.Drawing.Point(448, 468);
-            this.generateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.generateButton.Margin = new System.Windows.Forms.Padding(4);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(164, 69);
             this.generateButton.TabIndex = 13;
@@ -388,7 +389,7 @@
             this.isReportCheckBox.AutoSize = true;
             this.isReportCheckBox.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.isReportCheckBox.Location = new System.Drawing.Point(445, 233);
-            this.isReportCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.isReportCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.isReportCheckBox.Name = "isReportCheckBox";
             this.isReportCheckBox.Size = new System.Drawing.Size(73, 21);
             this.isReportCheckBox.TabIndex = 17;
@@ -421,7 +422,7 @@
             this.Controls.Add(this.dataBox);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(954, 580);
             this.MinimumSize = new System.Drawing.Size(954, 580);
             this.Name = "ClarionSupportMain";
