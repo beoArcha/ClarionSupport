@@ -1,6 +1,6 @@
 ﻿namespace ClarionSupport
 {
-    partial class Form2Reverser
+    partial class Reverser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2Reverser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reverser));
             this.rtfValue = new System.Windows.Forms.RichTextBox();
             this.reverseButton = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();

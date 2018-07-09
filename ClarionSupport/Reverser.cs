@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace ClarionSupport
 {
-    public partial class Form2Reverser : Form
+    public partial class Reverser : Form
     {
         private ClipboardMonitor clipMonit = new ClipboardMonitor();
 
-        public Form2Reverser()
+        public Reverser()
         {
             InitializeComponent();
         }

@@ -86,32 +86,38 @@
     <Compile Include="ClipboardMonitor.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2Reverser.cs">
+    <Compile Include="Reverser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2Reverser.Designer.cs">
-      <DependentUpon>Form2Reverser.cs</DependentUpon>
+    <Compile Include="Reverser.Designer.cs">
+      <DependentUpon>Reverser.cs</DependentUpon>
     </Compile>
     <Compile Include="GenerateResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropsEnum.cs" />
     <Compile Include="ReverserWork.cs" />
+    <Compile Include="TableOpenClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableOpenClose.Designer.cs">
+      <DependentUpon>TableOpenClose.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingClass.cs" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2Reverser.resx">
-      <DependentUpon>Form2Reverser.cs</DependentUpon>
+    <EmbeddedResource Include="Reverser.resx">
+      <DependentUpon>Reverser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +129,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TableOpenClose.resx">
+      <DependentUpon>TableOpenClose.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

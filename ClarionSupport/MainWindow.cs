@@ -179,7 +179,7 @@ namespace ClarionSupport
 
         private void valueReverserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2Reverser f2R = new Form2Reverser();
+            Reverser f2R = new Reverser();
             f2R.Show();
         }
 
@@ -294,6 +294,12 @@ namespace ClarionSupport
         private void resultRTFBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableOCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TableOpenClose TOC = new TableOpenClose();           
+            TOC.Show();
         }
     }
 }
