@@ -39,6 +39,7 @@
             this.closeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.autoAddCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tableTextBox
@@ -52,7 +53,7 @@
             // 
             this.shortTextBox.Location = new System.Drawing.Point(86, 59);
             this.shortTextBox.Name = "shortTextBox";
-            this.shortTextBox.Size = new System.Drawing.Size(100, 20);
+            this.shortTextBox.Size = new System.Drawing.Size(290, 20);
             this.shortTextBox.TabIndex = 1;
             // 
             // openTextBox
@@ -73,7 +74,7 @@
             // 
             // generateButton
             // 
-            this.generateButton.Location = new System.Drawing.Point(86, 86);
+            this.generateButton.Location = new System.Drawing.Point(170, 86);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(100, 23);
             this.generateButton.TabIndex = 2;
@@ -83,7 +84,7 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(192, 86);
+            this.clearButton.Location = new System.Drawing.Point(276, 86);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(100, 23);
             this.clearButton.TabIndex = 3;
@@ -129,11 +130,23 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Table short:";
             // 
+            // autoAddCheckBox
+            // 
+            this.autoAddCheckBox.AutoSize = true;
+            this.autoAddCheckBox.Location = new System.Drawing.Point(16, 90);
+            this.autoAddCheckBox.Name = "autoAddCheckBox";
+            this.autoAddCheckBox.Size = new System.Drawing.Size(124, 17);
+            this.autoAddCheckBox.TabIndex = 10;
+            this.autoAddCheckBox.Text = "Auto add table name";
+            this.autoAddCheckBox.UseVisualStyleBackColor = true;
+            this.autoAddCheckBox.CheckedChanged += new System.EventHandler(this.autoAddCheckBox_CheckedChanged);
+            // 
             // TableOpenClose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 386);
+            this.Controls.Add(this.autoAddCheckBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.closeButton);
@@ -164,5 +177,6 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox autoAddCheckBox;
     }
 }

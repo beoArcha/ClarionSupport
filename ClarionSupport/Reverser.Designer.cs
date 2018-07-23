@@ -38,20 +38,18 @@
             // 
             // rtfValue
             // 
-            this.rtfValue.Location = new System.Drawing.Point(9, 12);
-            this.rtfValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtfValue.Location = new System.Drawing.Point(7, 10);
             this.rtfValue.Name = "rtfValue";
-            this.rtfValue.Size = new System.Drawing.Size(359, 240);
+            this.rtfValue.Size = new System.Drawing.Size(270, 196);
             this.rtfValue.TabIndex = 0;
             this.rtfValue.Text = "";
             this.rtfValue.TextChanged += new System.EventHandler(this.rtfValue_TextChanged);
             // 
             // reverseButton
             // 
-            this.reverseButton.Location = new System.Drawing.Point(135, 268);
-            this.reverseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.reverseButton.Location = new System.Drawing.Point(101, 218);
             this.reverseButton.Name = "reverseButton";
-            this.reverseButton.Size = new System.Drawing.Size(103, 39);
+            this.reverseButton.Size = new System.Drawing.Size(77, 32);
             this.reverseButton.TabIndex = 1;
             this.reverseButton.Text = "Reverse";
             this.reverseButton.UseVisualStyleBackColor = true;
@@ -60,10 +58,9 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(16, 268);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Location = new System.Drawing.Point(12, 218);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(106, 21);
+            this.checkBox1.Size = new System.Drawing.Size(83, 17);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Auto adding";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -71,10 +68,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(247, 268);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(185, 218);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 39);
+            this.button1.Size = new System.Drawing.Size(38, 32);
             this.button1.TabIndex = 3;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
@@ -82,28 +78,26 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(305, 268);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(229, 218);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(57, 39);
+            this.button2.Size = new System.Drawing.Size(43, 32);
             this.button2.TabIndex = 4;
             this.button2.Text = "Copy";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form2Reverser
+            // Reverser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 321);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.reverseButton);
             this.Controls.Add(this.rtfValue);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form2Reverser";
+            this.Name = "Reverser";
             this.Text = "Value reverser";
             this.ResumeLayout(false);
             this.PerformLayout();
