@@ -45,7 +45,10 @@ namespace ClarionSupport
                 {
                     WorkingClass control = new WorkingClass(tempStringEntry);
                     control.ValueCheck();
-                    dataBox.Items.Add(control.Name());
+                    if (!dataBox.Items.Contains(control.Name()))
+                    {
+                        dataBox.Items.Add(control.Name());
+                    }
                 }
                 else
                 {
@@ -212,7 +215,10 @@ namespace ClarionSupport
                 {
                     WorkingClass control = new WorkingClass(tempStringEntry);
                     control.ValueCheck();
-                    dataBox.Items.Add(control.Name());
+                    if (!dataBox.Items.Contains(control.Name()))
+                    {
+                        dataBox.Items.Add(control.Name());
+                    }                    
                 }
                 else
                 {
@@ -300,6 +306,12 @@ namespace ClarionSupport
         {
             TableOpenClose TOC = new TableOpenClose();           
             TOC.Show();
+        }
+
+        private void dataBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string curItem = dataBox.SelectedItem.ToString();
+            controlNameEntry.Text = curItem;
         }
     }
 }

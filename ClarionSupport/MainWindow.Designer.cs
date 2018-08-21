@@ -53,12 +53,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clearAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valueReverserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableOCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errorLabel = new System.Windows.Forms.Label();
             this.generateButton = new System.Windows.Forms.Button();
             this.isReportCheckBox = new System.Windows.Forms.CheckBox();
-            this.tableOCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -73,6 +73,7 @@
             this.dataBox.Name = "dataBox";
             this.dataBox.Size = new System.Drawing.Size(145, 277);
             this.dataBox.TabIndex = 3;
+            this.dataBox.SelectedIndexChanged += new System.EventHandler(this.dataBox_SelectedIndexChanged);
             this.dataBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataBox_keyUp);
             // 
             // propBox
@@ -321,6 +322,13 @@
             this.valueReverserToolStripMenuItem.Text = "Value reverser";
             this.valueReverserToolStripMenuItem.Click += new System.EventHandler(this.valueReverserToolStripMenuItem_Click);
             // 
+            // tableOCToolStripMenuItem
+            // 
+            this.tableOCToolStripMenuItem.Name = "tableOCToolStripMenuItem";
+            this.tableOCToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.tableOCToolStripMenuItem.Text = "Table OC";
+            this.tableOCToolStripMenuItem.Click += new System.EventHandler(this.tableOCToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
@@ -370,13 +378,6 @@
             this.isReportCheckBox.Text = "Report";
             this.isReportCheckBox.UseVisualStyleBackColor = true;
             this.isReportCheckBox.CheckedChanged += new System.EventHandler(this.isReportCheckBox_CheckedChanged);
-            // 
-            // tableOCToolStripMenuItem
-            // 
-            this.tableOCToolStripMenuItem.Name = "tableOCToolStripMenuItem";
-            this.tableOCToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.tableOCToolStripMenuItem.Text = "Table OC";
-            this.tableOCToolStripMenuItem.Click += new System.EventHandler(this.tableOCToolStripMenuItem_Click);
             // 
             // ClarionSupportMain
             // 
