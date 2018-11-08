@@ -93,8 +93,8 @@ namespace ClarionSupport
         {
             try
             {
-                if (dataBox.SelectedItems.Count>0)
-                dataBox.Items.RemoveAt(dataBox.SelectedIndex);
+                if (dataBox.SelectedItems.Count > 0)
+                    dataBox.Items.RemoveAt(dataBox.SelectedIndex);
             }
             catch (Exception ex)
             {
@@ -207,27 +207,34 @@ namespace ClarionSupport
 
         private void autoAddCheck_EnabledClip(object sender, EventArgs e)
         {
-            try
+            if (!resultRTFBox.Focused)
             {
-                string tempStringEntry = Clipboard.GetText();
+                try
+                {
+                    string tempStringEntry = Clipboard.GetText();
 
-                if (tempStringEntry.Length > 0)
-                {
-                    WorkingClass control = new WorkingClass(tempStringEntry);
-                    control.ValueCheck();
-                    if (!dataBox.Items.Contains(control.Name()))
+                    if (tempStringEntry.Length > 0)
                     {
-                        dataBox.Items.Add(control.Name());
-                    }                    
+                        WorkingClass control = new WorkingClass(tempStringEntry);
+                        control.ValueCheck();
+                        if (!dataBox.Items.Contains(control.Name()))
+                        {
+                            dataBox.Items.Add(control.Name());
+                        }
+                    }
+                    else
+                    {
+                        throw new ArgumentNullException();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new ArgumentNullException();
+                    errorLabel.Text = ex.Message;
                 }
             }
-            catch (Exception ex)
+            else
             {
-                errorLabel.Text = ex.Message;
+                autoAddCheck.Checked = false;
             }
         }
 
@@ -255,7 +262,6 @@ namespace ClarionSupport
         //}
         private void dataBox_keyUp(object sender, KeyEventArgs e)
         {
-
             if (e.KeyCode == Keys.Delete)
             {
                 try
@@ -266,7 +272,6 @@ namespace ClarionSupport
                     //{
                     //    foreach (var item in dataBox.SelectedIndices)
                     //    {
-                            
                     //    }
                     //}
                 }
@@ -279,7 +284,6 @@ namespace ClarionSupport
 
         private void isReportCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void keyPropBox(object sender, KeyEventArgs e)
@@ -299,19 +303,24 @@ namespace ClarionSupport
 
         private void resultRTFBox_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void tableOCToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TableOpenClose TOC = new TableOpenClose();           
+            TableOpenClose TOC = new TableOpenClose();
             TOC.Show();
         }
 
         private void dataBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string curItem = dataBox.SelectedItem.ToString();
-            controlNameEntry.Text = curItem;
+            try
+            {
+                string curItem = dataBox.SelectedItem.ToString();
+                controlNameEntry.Text = curItem;
+            }
+            catch
+            { }
+
         }
     }
 }

@@ -25,7 +25,11 @@ namespace ClarionSupport
                 opening = "IF " + text + "::Used = 0\r\n    CheckOpen(" + text + ", 1)\r\n END\r\n " + text + "::Used += 1";
                 if (shortText.Length > 0)
                 {
-                    opening += "\r\n BIND(" + text + ":RECORD) ";
+                    opening += "\r\n BIND(" + shortText + ":RECORD) ";
+                }
+                else
+                {
+                    opening += "\r\n BIND(" + text + ".RECORD) ";
                 }
                 closing = text + "::Used -= 1\r\n IF " + text + "::Used = 0 THEN CLOSE(" + text + ") END";
                 openTextBox.Text = opening;
