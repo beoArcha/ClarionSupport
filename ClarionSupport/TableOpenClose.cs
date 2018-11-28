@@ -92,7 +92,10 @@ namespace ClarionSupport
 
                 if (tempStringEntry.Length > 0)
                 {
-                    tableTextBox.Text = tempStringEntry;
+                    if (tableTextBox.Text.Length == 0)
+                        tableTextBox.Text = tempStringEntry;
+                    else if (shortTextBox.Text.Length > 0)
+                        shortTextBox.Text = tempStringEntry;
                 }               
             }
             catch (Exception ex)
